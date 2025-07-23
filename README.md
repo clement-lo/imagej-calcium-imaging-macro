@@ -2,7 +2,7 @@
 
 ## Overview
 
-This ImageJ macro was developed during a research technician role in the **Sensory Neurophysiology Lab at Queen Mary University of London**  to solve a key research bottleneck. It automates the analysis of calcium imaging data from fluorescence microscopy experiments, specifically tailored for investigating neuro-immune interactions in chronic pain models.
+This ImageJ macro was developed during a research technician role in the Sensory Neurophysiology Lab at Queen Mary University of London to solve a key research bottleneck. It automates the analysis of calcium imaging data from fluorescence microscopy experiments, specifically tailored for investigating neuro-immune interactions in chronic pain models.
 
 The primary challenge was the time-consuming manual analysis of multi-frame image stacks from experiments involving primary mouse dorsal root ganglia (DRG) neurons. This macro was created to standardize and accelerate the process, **reducing analysis turnaround time by 50%** and freeing up ~2 hours per experiment for other critical research activities.
 
