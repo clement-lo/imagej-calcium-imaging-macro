@@ -58,6 +58,7 @@ The macro is designed for an interactive yet automated workflow, directly addres
 ### Installation Steps
 1. Download the `imagej-calcium-imaging-macro.ijm` file
 2. Select the .ijm: /Applications/Fiji.app/Plugins/Macros/Run...’
+
 Alternatively,
 1. Download the `imagej-calcium-imaging-macro.ijm` file
 2. Place it in your ImageJ/Fiji plugins folder:
