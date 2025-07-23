@@ -1,25 +1,25 @@
-# ImageJ Calcium Imaging Analysis Macro
+# ImageJ Macro for Semi-Automated Calcium Imaging Analysis in Neuro-Immune Research
 
 ## Overview
 
-This ImageJ macro automates the analysis of calcium imaging data from fluorescence microscopy experiments, specifically designed for neurobiology and neuroengineering research applications. The macro streamlines the workflow for analyzing calcium dynamics in neurons, particularly in response to high potassium chloride (KCl) stimulation experiments.
+This ImageJ macro was developed during a research technician role in the **Sensory Neurophysiology Lab at Queen Mary University of London**  to solve a key research bottleneck. It automates the analysis of calcium imaging data from fluorescence microscopy experiments, specifically tailored for investigating neuro-immune interactions in chronic pain models[cite: 19].
 
-## Scientific Context
+The primary challenge was the time-consuming manual analysis of multi-frame image stacks from experiments involving primary mouse dorsal root ganglia (DRG) neurons. This macro was created to standardize and accelerate the process, **reducing analysis turnaround time by 50%** and freeing up ~2 hours per experiment for other critical research activities.
 
-### What is Calcium Imaging?
-Calcium imaging is a technique used in neuroscience to monitor neuronal activity by tracking changes in intracellular calcium concentration. When neurons become active, calcium ions flow into the cell, causing fluorescent calcium indicators to increase in brightness. This change in fluorescence can be measured over time to study:
+## Scientific Context: Application in Chronic Pain Research
 
-- Neuronal excitability
-- Synaptic activity
-- Network dynamics
-- Response to pharmacological agents
-- Disease-related calcium dysregulation
+This tool was applied to a project investigating how inflammatory mediators from fibromyalgia and rheumatoid arthritis patients affect neuronal signaling.
 
-### Typical Experimental Workflow
-1. **Baseline Recording**: Record neuronal calcium levels at rest
-2. **Intervention/Condition**: Apply experimental treatment or drug
-3. **KCl Stimulation**: Apply high KCl solution to depolarize neurons and trigger calcium influx
-4. **Analysis**: Measure fluorescence intensity changes over time
+* **Goal:** To quantify calcium dynamics in mouse DRG neurons and supporting cells when exposed to human neutrophils, their extracellular vesicles (EVs), and fibroblast lysates.
+* **Technique:** Time-series confocal imaging was used to record fluorescence changes in Fluo-4AM stained cells across different experimental phases.
+* **Experimental Workflow Supported:**
+    1.  **Baseline Recording**: Measure resting calcium levels with NaCl solution.
+    2.  **Intervention**: Apply patient-derived samples (neutrophils, EVs, etc.).
+    3.  **Maximal Stimulation**: Apply high KCl solution to confirm cell viability and measure maximal response.
+
+## System Architecture and Key Features
+
+The macro is designed for an interactive yet automated workflow, directly addressing the needs of the neuro-immune pain project.
 
 ## System Architecture
 
@@ -32,10 +32,11 @@ Calcium imaging is a technique used in neuroscience to monitor neuronal activity
 │  1. Image Stack Loading (.zip files)                    │
 │  2. Brightness/Contrast Adjustment                      │
 │  3. ROI Management (Creation/Loading)                   │
-│  4. Multi-Measurement Execution                         │
-│  5. Time Series Analysis                                │
-│  6. Data Export (CSV format)                           │
-│  7. Batch Processing Support                            │
+│  4. Multi-Measure ROIs across all frames                │
+|  5. Time Frame Verification for Quality Control.         |
+│  6. Time Series Analysis                                │
+│  7. Data Export (CSV format)                            │
+│  8. Batch Processing Support                            │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -51,12 +52,13 @@ Calcium imaging is a technique used in neuroscience to monitor neuronal activity
 ## Installation and Requirements
 
 ### Prerequisites
-- **ImageJ** or **Fiji** (recommended) - [Download Fiji](https://fiji.sc/)
-- **Operating System**: Windows, macOS, or Linux
-- **RAM**: Minimum 4GB (8GB+ recommended for large datasets)
-- **Input Format**: Time-series image stacks in .zip format
+-   **ImageJ** or **Fiji** (Fiji is recommended)
+-   **Input Format**: Time-series image stacks (e.g., multi-frame TIFFs) packaged in .zip format.
 
 ### Installation Steps
+1. Download the `imagej-calcium-imaging-macro.ijm` file
+2. Select the .ijm: /Applications/Fiji.app/Plugins/Macros/Run...’
+Alternatively,
 1. Download the `imagej-calcium-imaging-macro.ijm` file
 2. Place it in your ImageJ/Fiji plugins folder:
    - **Windows**: `C:\Program Files\Fiji.app\plugins\`
@@ -69,9 +71,10 @@ Calcium imaging is a technique used in neuroscience to monitor neuronal activity
 
 ### Quick Start Guide
 
-1. **Launch the Macro**
-   - Open ImageJ/Fiji
-   - Navigate to `Plugins > Process Zip File with ROIs`
+1. **Launch the Macro** (Same as Step 1 in Installation Steps)
+	 - Open ImageJ/Fiji
+	 - Select the .ijm: /Applications/Fiji.app/Plugins/Macros/Run...’
+   - Or, navigate to `Plugins > Process Zip File with ROIs`
 
 2. **Load Image Stack**
    - Select your .zip file containing the calcium imaging time series
@@ -238,10 +241,7 @@ Suggestions for improvements are welcome, particularly for:
 This macro is provided as-is for research purposes. Users should validate results independently before publication.
 
 ---
-*Developed for the Sensory Neurophysiology Group, Queen Mary University London, by Research Technician Clement Lo*  
 
-*Macro Created: 15/03/2024*
-
-*Last Updated: 23/07/2025*  
-
-*Version: 1.1*
+*Developed for the Neurobiology/Neuroengineering Group*  
+*Last Updated: [Current Date]*  
+*Version: 1.0*
