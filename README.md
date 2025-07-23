@@ -6,7 +6,7 @@ This ImageJ macro was developed during a research technician role in the Sensory
 
 The primary challenge was the time-consuming manual analysis of multi-frame image stacks from experiments involving primary mouse dorsal root ganglia (DRG) neurons. This macro was created to standardize and accelerate the process, **reducing analysis turnaround time by 50%** and freeing up ~2 hours per experiment for other critical research activities.
 
-## Scientific Context: Application in Chronic Pain Research
+## Application in Chronic Pain Research
 
 This tool was applied to a project investigating how inflammatory mediators from fibromyalgia and rheumatoid arthritis patients affect neuronal signaling.
 
