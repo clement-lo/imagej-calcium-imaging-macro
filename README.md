@@ -2,20 +2,23 @@
 
 ## Overview
 
-This ImageJ macro was developed during a research technician role in the Sensory Neurophysiology Lab at Queen Mary University of London to solve a key research bottleneck. It automates the analysis of calcium imaging data from fluorescence microscopy experiments, specifically tailored for investigating neuro-immune interactions in chronic pain models.
+This ImageJ macro was developed during a research technician role in the **Sensory Neurophysiology Lab at Queen Mary University of London**  to solve a key research bottleneck. It automates the analysis of calcium imaging data from fluorescence microscopy experiments, specifically tailored for investigating neuro-immune interactions in chronic pain models.
 
 The primary challenge was the time-consuming manual analysis of multi-frame image stacks from experiments involving primary mouse dorsal root ganglia (DRG) neurons. This macro was created to standardize and accelerate the process, **reducing analysis turnaround time by 50%** and freeing up ~2 hours per experiment for other critical research activities.
 
-## Application in Chronic Pain Research
+## Scientific Context: Application in Chronic Pain Research
 
-This tool was applied to a project investigating how inflammatory mediators from fibromyalgia and rheumatoid arthritis patients affect neuronal signaling.
+[cite_start]This tool was applied to a project investigating how inflammatory mediators from fibromyalgia and rheumatoid arthritis patients affect neuronal signaling[cite: 19].
 
-* **Goal:** To quantify calcium dynamics in mouse DRG neurons and supporting cells when exposed to human neutrophils, their extracellular vesicles (EVs), and fibroblast lysates.
-* **Technique:** Time-series confocal imaging was used to record fluorescence changes in Fluo-4AM stained cells across different experimental phases.
+* [cite_start]**Goal:** To quantify calcium dynamics in mouse DRG neurons and supporting cells when exposed to human neutrophils, their extracellular vesicles (EVs), and fibroblast lysates.
+* [cite_start]**Technique:** Time-series confocal imaging was used to record fluorescence changes in Fluo-4AM stained cells across different experimental phases.
 * **Experimental Workflow Supported:**
     1.  **Baseline Recording**: Measure resting calcium levels with NaCl solution.
     2.  **Intervention**: Apply patient-derived samples (neutrophils, EVs, etc.).
     3.  **Maximal Stimulation**: Apply high KCl solution to confirm cell viability and measure maximal response.
+
+*A representative image of DRG neurons with Regions of Interest (ROIs) defined, after contrast adjustment*
+![DRG Neurons with ROIs drawn/loaded, contrast adjustment](<Image J Macro Screenshot.png>)
 
 ## System Architecture and Key Features
 
@@ -58,7 +61,6 @@ The macro is designed for an interactive yet automated workflow, directly addres
 ### Installation Steps
 1. Download the `imagej-calcium-imaging-macro.ijm` file
 2. Select the .ijm: /Applications/Fiji.app/Plugins/Macros/Run...’
-
 Alternatively,
 1. Download the `imagej-calcium-imaging-macro.ijm` file
 2. Place it in your ImageJ/Fiji plugins folder:
@@ -106,7 +108,7 @@ Alternatively,
    - Import into Excel or other analysis software
 
 ### Detailed Workflow Diagram
-
+![ImageJ Macro Workflow](<QMUL _ RT - ImageJ Macro.png>)
 ```
 Start
   │
@@ -227,10 +229,6 @@ Suggestions for improvements are welcome, particularly for:
 - Analysis integration
 
 ## References
-
-### Calcium Imaging Methodology
-1. Grienberger, C., & Konnerth, A. (2012). Imaging calcium in neurons. *Neuron*, 73(5), 862-885.
-2. Bootman, M. D., Rietdorf, K., Collins, T., Walker, S., & Sanderson, M. (2013). Loading fluorescent Ca2+ indicators into living cells. *Cold Spring Harbor Protocols*.
 
 ### ImageJ Resources
 - [ImageJ User Guide](https://imagej.nih.gov/ij/docs/guide/)
