@@ -240,7 +240,7 @@ This macro is provided as-is for research purposes. Users should validate result
 ---
 *Developed for the Sensory Neurophysiology Group, Queen Mary University London, by Research Technician Clement Lo*  
 
-*Macro Created: 15/03/2025*
+*Macro Created: 15/03/2024*
 
 *Last Updated: 23/07/2025*  
 
