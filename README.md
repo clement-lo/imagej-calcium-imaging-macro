@@ -239,6 +239,6 @@ This macro is provided as-is for research purposes. Users should validate result
 
 ---
 
-*Developed for your Neurobiology/Neuroengineering Group by Clement Lo*  
+*Developed for the Sensory Neurophysiology Group, Queen Mary University London by Research Technician Clement Lo*  
 *Last Updated: 23/07/2025*  
 *Version: 1.0*
